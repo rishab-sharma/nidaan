@@ -1,4 +1,4 @@
-# arjuna_hackDTU
+# Disease and Infected Area Recognition using CNN , KNN , SVC and K-Means
 
 ## Overview
 
