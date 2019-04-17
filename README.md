@@ -6,3 +6,8 @@ In this project we do disease recognition through two possible and feasible ways
 
 ## Demo Video
 [![Disease recognition](https://github.com/rishab-sharma/arjuna_hackDTU/blob/master/Screenshot%20from%202017-10-14%2017-09-15.png)](https://www.youtube.com/watch?v=-rHInBPPAEs&feature=youtu.be)
+
+## collaborators 
+Rishab Sharma
+Aditya Nagpal
+
