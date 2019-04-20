@@ -4,8 +4,8 @@ __pycache__
 
 *.pyc
 
-./idea
+.idea
 
-./idea/*
+.idea/*
 
 ./images/*
