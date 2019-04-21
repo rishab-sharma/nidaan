@@ -10,7 +10,7 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 @app.route('/')  
 def index():
-    return render_template('upload.html') 
+    return render_template('index.html')
 
 @app.route('/upload',methods=['POST'])
 def upload():
@@ -18,12 +18,9 @@ def upload():
     print(target)
 
     if not os.path.isdir(target):
-    	os.mkdir(target)
+        os.mkdir(target)
 
     for file in request.files.getlist("file"):
-        print(file)
-
-        #filename = file.filename
         destintion = "/".join([target,'test.jpeg'])
         print(destintion)
         file.save(destintion)
