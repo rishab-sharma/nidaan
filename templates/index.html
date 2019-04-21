@@ -21,9 +21,9 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">X-Ray Analysis</a> 
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
     
-    <a href="#">Contact</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
 </nav>
 
@@ -49,16 +49,17 @@ body {font-size:16px;}
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <h1>File Uploader</h1>
- <form id="form1" runat="server" method="POST">
-        <input type='file' id="imgInp" />
-        <img id="blah" src="#" alt="your image" style="height: 200px; width: 200px" />
- </form>
-<form id= "upload-form" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
-  <input type="file" name="file" accept="image/*" multiple>
-  <img id="blah" src="#" alt="your image" style="height: 200px; width: 200px" />
-  <input type="submit" value="send">
-</form>
-
+ <!--<form id="form1" runat="server" method="POST">-->
+        <!--<input type='file' id="imgInp" />-->
+        <!--<img id="blah" src="#" alt="your image" style="height: 200px; width: 200px" />-->
+ <!--</form>-->
+<div class="upload_form">
+  <form id= "form1" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data" action="#">
+    <input type="file" name="file" accept="image/*" multiple id="imgInp">
+    <img id="blah" src="#" alt="your image" style="height: 200px; width: 200px" />
+    <input type="submit" value="send" class="#">
+  </form>
+</div>
   <script type="text/javascript">
         console.log("Inside 0");
         function readURL(input) {
@@ -96,7 +97,7 @@ body {font-size:16px;}
  
   
   <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
+  <div class="w3-container" id="about" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>About.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>About Nidaan.</p>

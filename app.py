@@ -1,6 +1,6 @@
 import os
 from inference import get_inference
-from flask import Flask , render_template,request
+from flask import Flask , render_template,request, make_response,redirect
 from keras.applications.vgg19 import preprocess_input
 from keras.preprocessing import image
 import numpy as np
@@ -24,9 +24,8 @@ def upload():
         destintion = "/".join([target,'test.jpeg'])
         print(destintion)
         file.save(destintion)
-        
 
-    return render_template('complete.html')
+    return make_response("uploaded")
 
 @app.route('/predict',methods=['POST'])
 def predict():
