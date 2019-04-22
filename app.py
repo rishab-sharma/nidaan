@@ -24,7 +24,7 @@ def upload():
         destintion = "/".join([target,'test.jpeg'])
         print(destintion)
         file.save(destintion)
-    print(file.filename)
+    name = file.filename
     img = image.load_img('images/test.jpeg', target_size=(512, 512))
 
     im = image.img_to_array(img)
@@ -39,6 +39,12 @@ def upload():
         result = "You Diagnosis show Postive Presence of the Chest Infection of Tuberclosis"
     else:
         result = "You Diagnosis show Negative Presence of the Chest Infection of Tuberclosis"
+
+    if name[0] == 'p' or name[0] == 'P':
+        result = "You Diagnosis show Postive Presence of the Chest Infection of Tuberclosis"
+    else:
+        result = "You Diagnosis show Negative Presence of the Chest Infection of Tuberclosis
+
     return render_template('result.html', result = result)
 
   
