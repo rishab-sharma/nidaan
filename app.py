@@ -40,10 +40,11 @@ def upload():
     else:
         result = "You Diagnosis show Negative Presence of the Chest Infection of Tuberclosis"
 
+
     if name[0] == 'p' or name[0] == 'P':
         result = "You Diagnosis show Postive Presence of the Chest Infection of Tuberclosis"
     else:
-        result = "You Diagnosis show Negative Presence of the Chest Infection of Tuberclosis
+        result = "You Diagnosis show Negative Presence of the Chest Infection of Tuberclosis"
 
     return render_template('result.html', result = result)
 
