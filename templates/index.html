@@ -20,7 +20,7 @@ body {font-size:16px;}
   font-size: 16px;
 }
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="static/jquery.min.js"></script>
 </head><body>
 
 <!-- Sidebar/menu -->
@@ -71,11 +71,9 @@ body {font-size:16px;}
   </form>
 </div>
   <script type="text/javascript">
-        console.log("Inside 0");
         function readURL(input) {
           if (input.files && input.files[0]) {
               var reader = new FileReader();
-              console.log("Inside 1");
               reader.onload = function (e) {
                   $('#blah').attr('src', e.target.result);
               }
