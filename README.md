@@ -1,7 +1,6 @@
 # Disease and Infected Area Recognition | X-ray Analysis - CNN | Epidemic Detection - Clustering and Safe Area Marking
 
-      
-**NOTE**: Epidemic Detection Feature not open Sourced Yet
+**NOTE**: ⚠️ Epidemic Detection Feature not open Sourced Yet ⚠️
 
 ## Overview
 
