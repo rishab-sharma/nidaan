@@ -1,10 +1,10 @@
 from keras.layers import *
 from keras.models import *
 import numpy as np
-from PIL import Image
-import os
-
+import keras.backend as K
 def get_inference(img):
+    K.clear_session()
+
     model = Sequential()
     model.add(Conv2D(64, kernel_size = (3,3), strides = (1,1), activation = 'relu', padding='valid',input_shape = (512,512,3),      name='block1_conv1'))
     model.add(Conv2D(64, kernel_size = (3,3), strides = (1,1), activation = 'relu',padding='valid', name='block1_conv2'))
