@@ -1,8 +1,7 @@
 # Disease and Infected Area Recognition | X-ray Analysis - CNN | Epidemic Detection - Clustering and Safe Area Marking
 
-<aside class="notice">
-You must replace `meowmeowmeow` with your personal API key.
-</aside>
+      
+**NOTE**: Epidemic Detection Feature not open Sourced Yet
 
 ## Overview
 
