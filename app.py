@@ -24,7 +24,11 @@ def upload():
         destintion = "/".join([target,'test.jpeg'])
         print(destintion)
         file.save(destintion)
+
     name = file.filename
+
+    print(name, "Uploaded")
+
     img = image.load_img('images/test.jpeg', target_size=(512, 512))
 
     im = image.img_to_array(img)
@@ -36,15 +40,9 @@ def upload():
     prediction = get_inference(im)[0][0]
 
     if prediction == 1.0:
-        result = "You Diagnosis show Postive Presence of the Chest Infection of Tuberclosis"
+        result = "You Diagnosis show Postive Presence of the Chest Infection of Pneumonia"
     else:
-        result = "You Diagnosis show Negative Presence of the Chest Infection of Tuberclosis"
-
-
-    if name[0] == 'p' or name[0] == 'P':
-        result = "You Diagnosis show Postive Presence of the Chest Infection of Tuberclosis"
-    else:
-        result = "You Diagnosis show Negative Presence of the Chest Infection of Tuberclosis"
+        result = "You Diagnosis show Negative Presence of the Chest Infection of Pneumonia"
 
     return render_template('result.html', result = result)
 

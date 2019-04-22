@@ -51,7 +51,7 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Tuberclosis Diagnosis</b></h1>
+    <h1 class="w3-jumbo"><b>Pneumonia Diagnosis</b></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>X-Ray Analysis.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
@@ -59,10 +59,7 @@ body {font-size:16px;}
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <h1>File Uploader</h1>
- <!--<form id="form1" runat="server" method="POST">-->
-        <!--<input type='file' id="imgInp" />-->
-        <!--<img id="blah" src="#" alt="your image" style="height: 200px; width: 200px" />-->
- <!--</form>-->
+
 <div class="upload_form">
   <form id= "form1" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data" action="#">
     <input type="file" name="file" accept="image/*" multiple id="imgInp" class="button_css"><br><br><br>
